@@ -5,66 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechStay</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        header {
+            background-color: rgb(24, 129, 155);
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: aliceblue;
+            margin: 0;
+        }
+
+        h2 {
+            background-color: rgb(24, 129, 155);
+            color: aliceblue;
+            text-align: center;
+            padding: 10px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+
+        input, select {
+            margin-bottom: 15px;
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(24, 129, 155);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            width: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1f6f7e;
+        }
+    </style>
 </head>
 <body>
-<header align="center" style="background-color: rgb(24, 129, 155);"><h1 style="color: aliceblue;">TECHSTAY</h1></header>    
-<h2 align="center" style="background-color: rgb(24, 129, 155); color: aliceblue;" >RESERVA DE SALA</h2>
-<form action="feedback.html">
-<label for="Data da Reserva">DATA DA RESERVA:</label>
-<input type="date" min="2025-03-20" required><br>
-<label for="horario">ESCOLHA SEU HORÁRIO::</label>
-<select id="horario" name="horario" required>
-  <option value="8h">08:00</option>
-  <option value="8h30">08:30</option>
-  <option value="9h">09:00</option>
-  <option value="9h30">09:00</option>
-  <option value="10h">09:00</option>
-  <option value="10h30">09:00</option>
-  <option value="11h">09:00</option>
-  <option value="11h30">09:00</option>
-  <option value="12h">09:00</option>
-  <option value="12h30">09:00</option>
-  <option value="14h">14:00</option>
-  <option value="14h30">14:30</option>
-  <option value="15h">15:00</option>
-  <option value="15h30">15:30</option>
-  <option value="16h">16:00</option>
-  <option value="16h30">16:30</option>
-  <option value="17h">17:00</option>
-  <option value="17h30">17:30</option>
-</select><br>
-<label for="sala">TIPO DE SALA:</label>
-<select name="tipo de sala" required>
-<option value="individual">INDIVIDUAL</option>
-<option value="reunião">REUNIÃO</option>
-<option value="treinamento">TREINAMENTO</option>
-</option>
-</select><br>
-<label for="participantes">PARTICIPANTES</label>
-<select name="participantes" required>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">7</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-    <option value="10">10</option>
-    <option value="11">11</option>
-    <option value="12">12</option>
-    <option value="13">13</option>
-    <option value="14">14</option>
-    <option value="15">15</option>
-    <option value="16">16</option>
-    <option value="17">17</option>
-    <option value="18">18</option>
-    <option value="19">19</option>
-    <option value="20">20</option>
-</select>
-<br>
-<input aling="center" type="submit" value="ENVIAR">
-</form>
-</body>
-</html>
+
+    <header>
+        <h1>TECHSTAY</h1>
+    </header>
+
+    <h2>RESERVA DE SALA</h2>
+
+    <form action="feedback.html">
+        <label for="data-reserva">DATA DA RESERVA:</label>
+        <input type="date" id="data-reserva" name="data-reserva" min="2025-03-20" required>
+
+        <label for="horario">ESCOLHA
